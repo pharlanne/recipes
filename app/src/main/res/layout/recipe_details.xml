@@ -1,0 +1,148 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:weightSum="1">
+
+    <ImageView
+        android:id="@+id/item_image"
+        android:layout_width="390dp"
+        android:layout_height="150dp"
+        android:scaleType="centerInside"
+        android:contentDescription="@string/img_food"
+
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_below="@+id/ratingBar"
+        android:layout_above="@+id/text_ingredients" />
+        <!--android:src="@drawable/souffle" />-->
+
+    <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/linearLayout"
+        android:layout_marginBottom="55dp"
+        android:layout_above="@+id/linearLayout3"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true">
+
+        <!--<TextView-->
+            <!--android:id="@+id/label_ingredients"-->
+            <!--android:layout_width="wrap_content"-->
+            <!--android:layout_height="wrap_content"-->
+            <!--android:layout_marginLeft="25dp"-->
+            <!--android:layout_marginTop="15dp"-->
+            <!--android:layout_centerVertical="true"-->
+            <!--android:text="Ingredients: "-->
+            <!--android:layout_alignParentLeft="true"/>-->
+
+    </LinearLayout>
+
+    <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:weightSum="1"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:id="@+id/linearLayout2">
+
+        <!--<TextView-->
+            <!--android:id="@+id/label_title"-->
+            <!--android:layout_width="50dp"-->
+            <!--android:layout_height="wrap_content"-->
+            <!--android:layout_marginLeft="25dp"-->
+            <!--android:layout_marginTop="15dp"-->
+            <!--android:layout_centerVertical="true"-->
+            <!--android:text="Title: "-->
+            <!--android:layout_alignParentLeft="true"/>-->
+
+        <TextView
+            android:id="@+id/text_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="15dp"
+            android:layout_marginTop="15dp"
+            android:layout_centerVertical="false"
+            android:text="@string/text_title"
+            android:layout_alignParentLeft="false"
+            android:layout_weight="0.54"
+            android:textSize="30dp"
+            android:textColor="@android:color/holo_green_light"
+            android:textStyle="bold" />
+
+    </LinearLayout>
+
+    <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/linearLayout3"
+        android:layout_marginBottom="97dp"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true">
+
+        <!--<TextView-->
+            <!--android:id="@+id/label_method"-->
+            <!--android:layout_width="wrap_content"-->
+            <!--android:layout_height="wrap_content"-->
+            <!--android:layout_marginLeft="25dp"-->
+            <!--android:layout_marginTop="15dp"-->
+            <!--android:layout_centerVertical="true"-->
+            <!--android:text="Method"-->
+            <!--android:layout_alignParentLeft="true"/>-->
+
+        <TextView
+            android:id="@+id/text_method"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="15dp"
+            android:layout_marginTop="15dp"
+            android:text="@string/label_method"
+            android:layout_centerVertical="false"
+            android:layout_alignParentRight="true"
+            android:textSize="16dp" />
+
+
+
+
+        </LinearLayout>
+
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:inputType="textMultiLine"
+        android:ems="10"
+        android:id="@+id/editText"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_marginLeft="10dp"
+        android:editable="true"
+        android:hint="add recipe notes" />
+
+    <RatingBar
+        android:layout_width="300dp"
+        android:layout_height="50dp"
+        android:id="@+id/ratingBar"
+        android:layout_weight=".2"
+        android:layout_below="@+id/linearLayout2"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true" />
+
+    <TextView
+        android:id="@+id/text_ingredients"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/label_ingredients"
+        android:textSize="16dp"
+        android:layout_above="@+id/linearLayout3"
+        android:layout_alignLeft="@+id/editText"
+        android:layout_alignStart="@+id/editText" />
+
+
+</RelativeLayout>

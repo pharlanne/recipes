@@ -1,0 +1,20 @@
+<resources>
+    <string name="app_name">Recipes</string>
+    <string name="submit_button">Submit</string>
+    <string name="activity_details">Amphibian Details</string>
+    <string name= "add_favourite_button">Add to favourite</string>
+    <string name="app_label">Bien Manger</string>
+    <string name="search_hint">search recipes</string>
+
+
+    <string name="app_header">Recipes</string>
+    <string name="label_title">Title</string>
+    <string name="label_ingredients">Ingredients: </string>
+    <string name="label_method">Method</string>
+    <string name="text_title">Title</string>
+    <string name="text_ingredients">Ingredients</string>
+    <string name="text_method">Method</string>
+    <string name="img_food">Photo</string>
+    <string name="values">mmmmmm</string>
+
+</resources>
